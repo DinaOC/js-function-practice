@@ -11,7 +11,7 @@
 // 0. write your own forEach() that takes two arguments: an array, and a callback
 
 function forEach(array, callback){
-    // YOUR CODE HERE
+  
 
 }
 
@@ -26,10 +26,14 @@ console.assert(total === 24);
 
 function sum(){
     // parse arguments into an array
-    var args = [].slice.call(arguments);
+    var args = [1,2,3,5].slice.call(arguments);
+    var sum=0;
+    for (var i=0; i< args.length; i++){
 
-    // .. do something with each element of args
-    // YOUR CODE HERE
+      sum+= args[i];
+    }
+    console.log(sum);
+return sum;
 }
 
 console.assert( sum(1, 2, 3, 4, 5) === 15 )
@@ -50,10 +54,13 @@ console.assert( average(2, 4, 6, 8) === 5 )
 
 function largest(){
     // parse arguments into an array
-    var args = [].slice.call(arguments);
+    var args = [2,4,6,8].slice.call(arguments);
+    var large =0;
+    var largest;
+    for (var i=0; i<args.length; i++){
 
-    // .. do something with each element of args
-    // YOUR CODE HERE
+    }
+
 }
 
 console.assert( largest(2, 4, 6, 8) === 8 )
@@ -62,11 +69,18 @@ console.assert( largest(2, 4, 6, 8) === 8 )
 
 function longest(){
     // parse arguments into an array
-    var args = [].slice.call(arguments);
-
-    // .. do something with each element of args
-    // YOUR CODE HERE
+    var args = ["this", "is", "a", "awesome", "function"].slice.call(arguments);
+    var lgth = 0;
+    var longest;
+    for (var i=0; i<args.length; i++){
+      if (arr[i]).length>lgth){
+        var lgth = args[i].length;
+        longest =args[i];
+      }
+    }
 }
+console.log(longest);
+return(longest);
 
  console.assert( longest("this", "is", "a", "awesome", "function") === "function" );
 
@@ -83,6 +97,7 @@ function longest(){
 var letters =["k","m","a","z"];
 letters.sort(function(a,b){
   return a-b;
+  console.log(letters);
   console.assert(letters("a","k","m","z"));
 });
 
@@ -90,6 +105,7 @@ letters.sort(function(a,b){
 var coldcol = ["violet", "blue","green"];
 var warmcol = ["red","orange","yellow"];
 var colors = coldcol.concat(warmcol);
+console.log(colors);
 console.assert(colors("violet", "blue","green","red","orange","yellow"));
 
 // .indexOf()
@@ -100,36 +116,44 @@ console.assert(str());
 // .split()
 var longestWord = "Pneumonoultramicroscopicsilicovolcanoconiosis";
 var res = longestWord.split("");
+console.log(longestWord);
 
 // .join()
 var random = ["more","more", "more","more"];
 var all = random.join(" and ");
+console.log(longestWord);
 
 // .pop()
 var food = ["chocolate", "pizza", "bananas", "book"];
 var onlyFood =food.pop();
+console.log(food);
 
 // .push()
 var health =["exercise","water","good food"];
 var more = health.push("sleep");
+console.log(health);
 
 // .slice()
 var animals = ["tiger", "monkey","pinguin", "dove", "panda"];
 var birds = animals.slice(2, 4);
+console.log(animals);
 
 
 // .splice()
 var girls = ["Nina", "Sofia","Mike", "Teresa"];
 girls.splice(2,1 "Zoe");
+console.log(girls);
 
 // .shift()
 var continents = ["China","Australia","Aisa", "South America"];
 continents.shift();
-
+console.log(continents);
 // .unshift()
 var continentsAll =["South America","Europe",];
 continentsAll.unshift("Antarctica","Africa");
+console.log(continentsAll);
 
 // .filter()
+
 
 // .map()
